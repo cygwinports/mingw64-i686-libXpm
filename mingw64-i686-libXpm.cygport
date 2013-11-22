@@ -3,7 +3,7 @@ ORIG_PN="libXpm"
 inherit cross xorg
 
 NAME="mingw64-i686-libXpm"
-VERSION=3.5.10
+VERSION=3.5.11
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="X.Org X Pixmap library for Win32 toolchain"
@@ -12,7 +12,6 @@ contains msvcrt-linked binaries (aka 'mingw').  It is for use with the
 mingw64-i686-gcc cross compiler, and installs into the
 /usr/i686-w64-mingw32/sys-root/mingw/{lib,include} directories."
 
-CPPFLAGS+=" -DNO_ZPIPE"
 CYGCONF_ARGS="--without-localedir"
 MAKEOPTS+=" bin_PROGRAMS= appman_DATA= "
 
